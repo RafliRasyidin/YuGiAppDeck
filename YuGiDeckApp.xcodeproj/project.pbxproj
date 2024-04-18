@@ -1,0 +1,512 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7303009D2BBAE82C003B3CE2 /* YuGiDeckAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7303009C2BBAE82C003B3CE2 /* YuGiDeckAppApp.swift */; };
+		7303009F2BBAE82C003B3CE2 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7303009E2BBAE82C003B3CE2 /* HomeScreen.swift */; };
+		730300A12BBAE82E003B3CE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 730300A02BBAE82E003B3CE2 /* Assets.xcassets */; };
+		730300A42BBAE82E003B3CE2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 730300A32BBAE82E003B3CE2 /* Preview Assets.xcassets */; };
+		7325D98A2BCE5D8E00B34842 /* CardImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7325D9892BCE5D8E00B34842 /* CardImages.swift */; };
+		7325D98C2BCE607D00B34842 /* CardInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7325D98B2BCE607D00B34842 /* CardInfo.swift */; };
+		7325D98F2BCE81AA00B34842 /* DataDummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7325D98E2BCE81AA00B34842 /* DataDummy.swift */; };
+		736E80072BBBDF430031D9EA /* Routes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736E80062BBBDF430031D9EA /* Routes.swift */; };
+		736E80092BBBE1400031D9EA /* DetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736E80082BBBE1400031D9EA /* DetailScreen.swift */; };
+		736E800B2BBBE1590031D9EA /* ProfileScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736E800A2BBBE1590031D9EA /* ProfileScreen.swift */; };
+		736E800D2BBBEF400031D9EA /* CardItemYuGi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736E800C2BBBEF400031D9EA /* CardItemYuGi.swift */; };
+		736E800F2BBBF8C00031D9EA /* HeaderHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736E800E2BBBF8C00031D9EA /* HeaderHome.swift */; };
+		73C4EAAE2BCF81E400DF515B /* YGOService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C4EAAD2BCF81E400DF515B /* YGOService.swift */; };
+		73C4EAB22BCF87A400DF515B /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C4EAB12BCF87A400DF515B /* HomeViewModel.swift */; };
+		73C4EAB52BCF8F6700DF515B /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C4EAB42BCF8F6700DF515B /* CacheManager.swift */; };
+		73C4EAB72BCFB96B00DF515B /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C4EAB62BCFB96B00DF515B /* DetailViewModel.swift */; };
+		73C4EABB2BCFBDC600DF515B /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C4EABA2BCFBDC600DF515B /* Loader.swift */; };
+		73C4EABD2BCFC92000DF515B /* RaceIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C4EABC2BCFC92000DF515B /* RaceIcon.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		730300992BBAE82C003B3CE2 /* YuGiDeckApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YuGiDeckApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7303009C2BBAE82C003B3CE2 /* YuGiDeckAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YuGiDeckAppApp.swift; sourceTree = "<group>"; };
+		7303009E2BBAE82C003B3CE2 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		730300A02BBAE82E003B3CE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		730300A32BBAE82E003B3CE2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7325D9892BCE5D8E00B34842 /* CardImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardImages.swift; sourceTree = "<group>"; };
+		7325D98B2BCE607D00B34842 /* CardInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardInfo.swift; sourceTree = "<group>"; };
+		7325D98E2BCE81AA00B34842 /* DataDummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataDummy.swift; sourceTree = "<group>"; };
+		736E80062BBBDF430031D9EA /* Routes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routes.swift; sourceTree = "<group>"; };
+		736E80082BBBE1400031D9EA /* DetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailScreen.swift; sourceTree = "<group>"; };
+		736E800A2BBBE1590031D9EA /* ProfileScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreen.swift; sourceTree = "<group>"; };
+		736E800C2BBBEF400031D9EA /* CardItemYuGi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardItemYuGi.swift; sourceTree = "<group>"; };
+		736E800E2BBBF8C00031D9EA /* HeaderHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderHome.swift; sourceTree = "<group>"; };
+		73C4EAAD2BCF81E400DF515B /* YGOService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YGOService.swift; sourceTree = "<group>"; };
+		73C4EAB12BCF87A400DF515B /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		73C4EAB42BCF8F6700DF515B /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
+		73C4EAB62BCFB96B00DF515B /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		73C4EABA2BCFBDC600DF515B /* Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
+		73C4EABC2BCFC92000DF515B /* RaceIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceIcon.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		730300962BBAE82C003B3CE2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		730300902BBAE82C003B3CE2 = {
+			isa = PBXGroup;
+			children = (
+				7303009B2BBAE82C003B3CE2 /* YuGiDeckApp */,
+				7303009A2BBAE82C003B3CE2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7303009A2BBAE82C003B3CE2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				730300992BBAE82C003B3CE2 /* YuGiDeckApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7303009B2BBAE82C003B3CE2 /* YuGiDeckApp */ = {
+			isa = PBXGroup;
+			children = (
+				730300AB2BBAE849003B3CE2 /* ui */,
+				736E80042BBBDCD90031D9EA /* styles */,
+				730300AA2BBAE840003B3CE2 /* data */,
+				7303009C2BBAE82C003B3CE2 /* YuGiDeckAppApp.swift */,
+				730300A02BBAE82E003B3CE2 /* Assets.xcassets */,
+				730300A22BBAE82E003B3CE2 /* Preview Content */,
+			);
+			path = YuGiDeckApp;
+			sourceTree = "<group>";
+		};
+		730300A22BBAE82E003B3CE2 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				730300A32BBAE82E003B3CE2 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		730300AA2BBAE840003B3CE2 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				73C4EAB32BCF8F5900DF515B /* local */,
+				73C4EAAC2BCF81C300DF515B /* remote */,
+				7325D98D2BCE7CBC00B34842 /* model */,
+				7325D98E2BCE81AA00B34842 /* DataDummy.swift */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		730300AB2BBAE849003B3CE2 /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				73C4EAB92BCFBDBA00DF515B /* component */,
+				736E80052BBBDF280031D9EA /* route */,
+				730300AF2BBAE883003B3CE2 /* profile */,
+				730300AE2BBAE878003B3CE2 /* detail */,
+				730300AD2BBAE871003B3CE2 /* home */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+		730300AD2BBAE871003B3CE2 /* home */ = {
+			isa = PBXGroup;
+			children = (
+				7303009E2BBAE82C003B3CE2 /* HomeScreen.swift */,
+				736E800C2BBBEF400031D9EA /* CardItemYuGi.swift */,
+				736E800E2BBBF8C00031D9EA /* HeaderHome.swift */,
+				73C4EAB12BCF87A400DF515B /* HomeViewModel.swift */,
+			);
+			path = home;
+			sourceTree = "<group>";
+		};
+		730300AE2BBAE878003B3CE2 /* detail */ = {
+			isa = PBXGroup;
+			children = (
+				736E80082BBBE1400031D9EA /* DetailScreen.swift */,
+				73C4EAB62BCFB96B00DF515B /* DetailViewModel.swift */,
+			);
+			path = detail;
+			sourceTree = "<group>";
+		};
+		730300AF2BBAE883003B3CE2 /* profile */ = {
+			isa = PBXGroup;
+			children = (
+				736E800A2BBBE1590031D9EA /* ProfileScreen.swift */,
+			);
+			path = profile;
+			sourceTree = "<group>";
+		};
+		7325D98D2BCE7CBC00B34842 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				7325D9892BCE5D8E00B34842 /* CardImages.swift */,
+				7325D98B2BCE607D00B34842 /* CardInfo.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		736E80042BBBDCD90031D9EA /* styles */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = styles;
+			sourceTree = "<group>";
+		};
+		736E80052BBBDF280031D9EA /* route */ = {
+			isa = PBXGroup;
+			children = (
+				736E80062BBBDF430031D9EA /* Routes.swift */,
+			);
+			path = route;
+			sourceTree = "<group>";
+		};
+		73C4EAAC2BCF81C300DF515B /* remote */ = {
+			isa = PBXGroup;
+			children = (
+				73C4EAAD2BCF81E400DF515B /* YGOService.swift */,
+			);
+			path = remote;
+			sourceTree = "<group>";
+		};
+		73C4EAB32BCF8F5900DF515B /* local */ = {
+			isa = PBXGroup;
+			children = (
+				73C4EAB42BCF8F6700DF515B /* CacheManager.swift */,
+			);
+			path = local;
+			sourceTree = "<group>";
+		};
+		73C4EAB92BCFBDBA00DF515B /* component */ = {
+			isa = PBXGroup;
+			children = (
+				73C4EABA2BCFBDC600DF515B /* Loader.swift */,
+				73C4EABC2BCFC92000DF515B /* RaceIcon.swift */,
+			);
+			path = component;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		730300982BBAE82C003B3CE2 /* YuGiDeckApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 730300A72BBAE82E003B3CE2 /* Build configuration list for PBXNativeTarget "YuGiDeckApp" */;
+			buildPhases = (
+				730300952BBAE82C003B3CE2 /* Sources */,
+				730300962BBAE82C003B3CE2 /* Frameworks */,
+				730300972BBAE82C003B3CE2 /* Resources */,
+				7325D9822BCE569500B34842 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YuGiDeckApp;
+			productName = YuGiDeckApp;
+			productReference = 730300992BBAE82C003B3CE2 /* YuGiDeckApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		730300912BBAE82C003B3CE2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					730300982BBAE82C003B3CE2 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 730300942BBAE82C003B3CE2 /* Build configuration list for PBXProject "YuGiDeckApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 730300902BBAE82C003B3CE2;
+			productRefGroup = 7303009A2BBAE82C003B3CE2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				730300982BBAE82C003B3CE2 /* YuGiDeckApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		730300972BBAE82C003B3CE2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				730300A42BBAE82E003B3CE2 /* Preview Assets.xcassets in Resources */,
+				730300A12BBAE82E003B3CE2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7325D9822BCE569500B34842 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "if [[ \"$(uname -m)\" == arm64 ]]; then\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		730300952BBAE82C003B3CE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73C4EAB52BCF8F6700DF515B /* CacheManager.swift in Sources */,
+				736E80092BBBE1400031D9EA /* DetailScreen.swift in Sources */,
+				7303009F2BBAE82C003B3CE2 /* HomeScreen.swift in Sources */,
+				736E80072BBBDF430031D9EA /* Routes.swift in Sources */,
+				73C4EAAE2BCF81E400DF515B /* YGOService.swift in Sources */,
+				7303009D2BBAE82C003B3CE2 /* YuGiDeckAppApp.swift in Sources */,
+				736E800D2BBBEF400031D9EA /* CardItemYuGi.swift in Sources */,
+				7325D98F2BCE81AA00B34842 /* DataDummy.swift in Sources */,
+				7325D98C2BCE607D00B34842 /* CardInfo.swift in Sources */,
+				73C4EAB72BCFB96B00DF515B /* DetailViewModel.swift in Sources */,
+				73C4EAB22BCF87A400DF515B /* HomeViewModel.swift in Sources */,
+				736E800B2BBBE1590031D9EA /* ProfileScreen.swift in Sources */,
+				736E800F2BBBF8C00031D9EA /* HeaderHome.swift in Sources */,
+				73C4EABD2BCFC92000DF515B /* RaceIcon.swift in Sources */,
+				7325D98A2BCE5D8E00B34842 /* CardImages.swift in Sources */,
+				73C4EABB2BCFBDC600DF515B /* Loader.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		730300A52BBAE82E003B3CE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		730300A62BBAE82E003B3CE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		730300A82BBAE82E003B3CE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"YuGiDeckApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rasyidin.YuGiDeckApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		730300A92BBAE82E003B3CE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"YuGiDeckApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rasyidin.YuGiDeckApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		730300942BBAE82C003B3CE2 /* Build configuration list for PBXProject "YuGiDeckApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				730300A52BBAE82E003B3CE2 /* Debug */,
+				730300A62BBAE82E003B3CE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		730300A72BBAE82E003B3CE2 /* Build configuration list for PBXNativeTarget "YuGiDeckApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				730300A82BBAE82E003B3CE2 /* Debug */,
+				730300A92BBAE82E003B3CE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 730300912BBAE82C003B3CE2 /* Project object */;
+}
